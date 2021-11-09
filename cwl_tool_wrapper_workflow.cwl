@@ -23,7 +23,9 @@ steps:
       ## Specify the outputs from the CWL tool here
        []
     run:
-      # If the CWL tool is already registered in Dockstore you can simply embed a TRS URL instead of embedding the tool CWL class
+      # Specify the descriptor for the CWL tool below by choosing the appropriate embedding method
+      #
+      # If the CWL tool is already registered in Dockstore you can simply embed a TRS URL
       # The TRS URL can be found on the Dockstore public page for the tool
        $import: https://dockstore.org/api/ga4gh/trs/v2/tools/quay.io%2Fucsc_cgl%2Fsimple_python/versions/develop/plain-CWL/descriptor//cwl_message_tool/cwl_message_tool.cwl
       #
@@ -41,7 +43,7 @@ steps:
       #
       # OR
       #
-      ## Embed the entire CWL tool specification below as in the example commented out CWL tool
+      ## Embed the entire CWL tool specification as done in the example below
       #
       # class: CommandLineTool
       # hints:
