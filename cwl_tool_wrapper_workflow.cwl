@@ -33,7 +33,7 @@ steps:
       # class: CommandLineTool
       # hints:
       #   DockerRequirement:
-      #     dockerPull: quay.io/mydockerrepo/myimage:latest
+      #     dockerPull: quay.io/ucsc_cgl/simple_python:latest
       #
       #   InitialWorkDirRequirement:
       #     listing:

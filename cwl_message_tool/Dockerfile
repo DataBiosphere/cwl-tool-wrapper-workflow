@@ -1,2 +1,2 @@
 # Base image
-FROM python
+FROM quay.io/bitnami/python
