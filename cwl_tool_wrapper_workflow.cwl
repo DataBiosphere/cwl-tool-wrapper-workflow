@@ -26,19 +26,21 @@ steps:
       # Specify the descriptor for the CWL tool below by choosing the appropriate embedding method
       #
       # If the CWL tool is already registered in Dockstore you can simply embed a TRS URL
+      # (This might not work if the execution engine does not support http(s) import statements)
       # The TRS URL can be found on the Dockstore public page for the tool
-       $import: https://dockstore.org/api/ga4gh/trs/v2/tools/quay.io%2Fucsc_cgl%2Fsimple_python/versions/develop/plain-CWL/descriptor//cwl_message_tool/cwl_message_tool.cwl
+      # $import: https://dockstore.org/api/ga4gh/trs/v2/tools/quay.io%2Fucsc_cgl%2Fsimple_python/versions/develop/plain-CWL/descriptor//cwl_message_tool/cwl_message_tool.cwl
       #
       # OR
       #
       # Use the name of the CWL file that contains the tool description
-      # (this might not work if there are dependencies in the tool CWL that cannot be resolved)
-      # ./cwl_message_tool/cwl_message_tool.cwl
+      # (This might not work if there are dependencies in the tool CWL that cannot be resolved)
+       ./cwl_message_tool/cwl_message_tool.cwl
       #
       ## OR
       #
       # A URL to the repository location of the tool CWL
-      # (this might not work if there are dependencies in the tool CWL that cannot be resolved)
+      # (This might not work if the execution engine does not support http(s) import statements or
+      # there are dependencies in the tool CWL that cannot be resolved)
       # $import: https://raw.githubusercontent.com/DataBiosphere/cwl-tool-wrapper-workflow/develop/cwl_message_tool/cwl_message_tool.cwl
       #
       # OR
